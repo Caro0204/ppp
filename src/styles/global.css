@@ -1,0 +1,47 @@
+body {
+  max-width: 1444px;
+  margin: 0 auto;
+  background-color: var(--baggrund);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+:root {
+  --blå: #07213f;
+  --brun: #5f4325;
+  --lysebrun: #935f2f;
+  --lyserød: #c48aac;
+  --baggrund: #fffdf3;
+  --font: "Hanken Grotesk", sans-serif;
+}
+
+p {
+  font-family: var(--font);
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  color: var(--brun);
+}
+
+/*---------cursor---------*/
+@media (min-width: 800px) {
+  #custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transform: translate(-50%, -50%); /* Center the cursor on the mouse position */
+    display: inline-table;
+    transition: background-color 0.3s;
+  }
+}

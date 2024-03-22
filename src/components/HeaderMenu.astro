@@ -1,0 +1,39 @@
+---
+import "../styles/global.css";
+import { Icon } from "astro-icon/components";
+
+const { iconname1, iconname2, iconname3 } = Astro.props;
+---
+
+<header>
+  <section class="menu iconer hide_mobile">
+    <div class="text_show">
+      <div class="text phone-text">
+        <p>+45 40 10 68 06</p>
+      </div>
+      <div class="icon" onclick="toggleText(`phone`)">
+        <Icon class="Phone_icon" name={iconname1} />
+      </div>
+    </div>
+
+    <div class="text_show">
+      <div class="text mail-text">
+        <p>vestergaardjensenc@gmail.com</p>
+      </div>
+      <div class="icon" onclick="toggleText(`mail`)">
+        <Icon class="mail_icon" name={iconname2} />
+      </div>
+    </div>
+
+    <div class="text_show">
+      <div class="text linkedin-text">
+        <a class="link" href="https://www.linkedin.com/in/caroline-vestergaard-jensen-0990652b7/" target="_blank">Linkedin profil</a>
+      </div>
+      <div class="icon" onclick="toggleText(`linkedin`)">
+        <Icon class="linkedin_icon" name={iconname3} />
+      </div>
+    </div>
+  </section>
+</header>
+
+<style></style>
